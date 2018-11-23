@@ -6,12 +6,13 @@ import java.util.concurrent.FutureTask;
 
 public class FutureTaskExample {
     public static void main(String[] args) throws InterruptedException, ExecutionException {
+        int a=3;
         FutureTask<String> futureTask = new FutureTask<>(new Callable<String>() {
             @Override
             public String call() throws Exception {
                 System.out.println("do Something in Callable");
                 Thread.sleep(5000);
-                return "Done";
+                return "Done"+a;
 
             }
         });
