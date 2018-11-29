@@ -6,13 +6,13 @@ import sun.misc.ProxyGenerator;
 
 public class TestFindLove {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
         //new SingleDog().findLove();
         //代理模式
         try {
             Person instance = (Person) new Introducer().getInstance(new SingleDog());
             System.out.println(instance.getClass().getName());
-            //instance.findLove();
+            instance.findLove();
 
             /**
              * 原理

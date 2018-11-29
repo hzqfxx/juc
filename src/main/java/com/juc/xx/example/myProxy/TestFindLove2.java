@@ -1,12 +1,7 @@
 package com.juc.xx.example.myProxy;
 
-import java.io.FileOutputStream;
-
-import com.juc.xx.example.proxy.Introducer;
 import com.juc.xx.example.proxy.Person;
 import com.juc.xx.example.proxy.SingleDog;
-
-import sun.misc.ProxyGenerator;
 
 public class TestFindLove2 {
 

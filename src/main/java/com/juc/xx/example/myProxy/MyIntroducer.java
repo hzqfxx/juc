@@ -1,7 +1,6 @@
 package com.juc.xx.example.myProxy;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 import com.juc.xx.example.proxy.Person;
 
