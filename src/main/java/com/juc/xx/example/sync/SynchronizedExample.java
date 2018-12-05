@@ -15,7 +15,7 @@ public class SynchronizedExample {
     public void test(int j){
         synchronized (this){
             for (int i = 0; i < 10; i++) {
-                System.out.println("test =" +i+"=="+j);
+                System.out.println("Test =" +i+"=="+j);
             }
         }
     }

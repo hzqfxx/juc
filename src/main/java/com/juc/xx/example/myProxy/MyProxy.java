@@ -40,7 +40,7 @@ public class MyProxy {
             //5.返回被代理后的代理对象
             Class proxyClass = loader.findClass("$Proxy0");
             Constructor constructor = proxyClass.getConstructor(MyInvocationHandler.class);
-            file.delete();
+            //file.delete();
             return constructor.newInstance(h);
         } catch (Exception e) {
             e.printStackTrace();
