@@ -1,6 +1,8 @@
 package com.juc.xx.example.atomic;
 
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -23,6 +25,8 @@ public class AtomicExample3 {
     public static Integer threadTotal = 20;
     //计数器
     public static LongAdder count = new LongAdder();
+
+    private static DateTimeFormatter formatter= DateTimeFormatter.ofPattern("yyyy MM dd");
 
     public static void main(String[] args) throws InterruptedException {
 
